@@ -7,6 +7,8 @@ body{
     background-image: linear-gradient(to right, #DBECEF,#E9F5F8,#DBECEF,#CDF0F7,#C0EDF7,#EFEDFF,#D2D8EF) !important;
     position: relative;
 }
+
+/* main container to house all contents */
 .main{
     margin: 5vh 10vh;
     background-color: var(--white);
@@ -15,6 +17,7 @@ body{
     height: 900vh;
     padding: 2rem 2rem 2rem 6rem;
 }
+/* navigatiion bar style */
 .nav-item a , .navbar-brand{
     list-style: none;
     text-decoration: none;
@@ -31,6 +34,65 @@ body{
     background-color: var(--oran);
     outline: var(--black);
 }
+
+/* hey div */
+.row .col6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+.row .col6 h1{
+    font-size: 70px;
+}
+.row .col6 h1 span{
+    font-size: 70px;
+    color: var(--oran);
+}
+.col-6 h1, .col-6 p{
+    margin-left: 4.5rem;
+}
+/* hire me button */
+.col6 .btn2 {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 4.5rem;
+    color: var(--white);
+    background-color: var(--oran);
+    border-radius: 4rem !important;
+    width: 7rem;
+    font-weight: 500;
+}
+
+
+
+/* images  */
+.col62{
+    position: relative;
+}
+.img-box{
+    position: absolute;
+    width: 65%;
+    height: 90%;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 1s, left 1s;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .main-img{
+    left: 54%;
+}
+/* Beginnig of responsivity */
 @media screen and (max-width: 800px)  {
     .main{
         width: 100%;
@@ -40,6 +102,7 @@ body{
         display: flex;
         flex-direction: column;
     }
+
         .navbar-brand, .nav-item{
         display: none;
     }
