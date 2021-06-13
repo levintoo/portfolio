@@ -17,6 +17,14 @@ body{
     height: 900vh;
     padding: 2rem 2rem 2rem 6rem;
 }
+.splash{
+    left: 10vh;
+    top: 10rem;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%, #d3f8ff 0%, rgba(196, 196, 196, 0) 100%);
+}
 /* navigatiion bar style */
 .nav-item a , .navbar-brand{
     list-style: none;
@@ -57,15 +65,14 @@ body{
 .col6 .btn2 {
     display: flex;
     align-self: flex-start;
+    align-items: center;
     margin-left: 4.5rem;
     color: var(--white);
     background-color: var(--oran);
     border-radius: 4rem !important;
-    width: 7rem;
+    width: 8rem;
     font-weight: 500;
 }
-
-
 
 /* images  */
 .col62{
@@ -92,6 +99,37 @@ body{
 .img-box:hover .main-img{
     left: 54%;
 }
+
+
+/* awesome services */
+
+.row2 .col6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+.row2 .col6 h1{
+    font-size: 70px;
+}
+.row2 .col6 h1 span{
+    font-size: 70px;
+    color: var(--oran);
+}
+.col-6 h1, .col-6 p{
+    margin-left: 4.5rem;
+}
+
+
+
+
+.col4{
+    position: absolute;
+    top: 45rem;
+    right: 20rem;
+    height: 20rem;
+}
 /* Beginnig of responsivity */
 @media screen and (max-width: 800px)  {
     .main{
@@ -113,3 +151,4 @@ body{
         display: none !important;
     }
 }
+
