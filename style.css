@@ -130,6 +130,16 @@ body{
     right: 20rem;
     height: 20rem;
 }
+.col5{
+    position: absolute;
+    top: 60rem;
+    right: 38rem;
+}
+.col7{
+    position: absolute;
+    top: 70rem;
+    right: 60rem;
+}
 /* Beginnig of responsivity */
 @media screen and (max-width: 800px)  {
     .main{
